@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agar.io Clone</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <script>
+        console.log('Page loaded'); // Basic debug log
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        console.log('Socket.IO script loaded?', typeof io !== 'undefined'); // Check if Socket.IO loaded
+    </script>
+    <script src="/game.js"></script>
+    <script>
+        console.log('Game script loaded'); // Check if game.js loaded
+    </script>
+</body>
+</html>
